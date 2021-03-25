@@ -5,7 +5,7 @@
 .Suppress warnings about Spring Services declaring dependencies to MapStruct Spring Components
 ----
 MATCH
-  (service:Spring:Service)-[:DEPENDS_ON|VIRTUAL_DEPENDS_ON]->(mapper:Interface),
+  (service:Spring:Service)-[:DEPENDS_ON]->(mapper:Interface),
   (mapper)-[:ANNOTATED_BY]->()-[:OF_TYPE]->(:Type{fqn:'org.mapstruct.Mapper'})
 SET
   service:jQASuppress
