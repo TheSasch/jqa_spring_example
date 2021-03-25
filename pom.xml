@@ -112,6 +112,9 @@
                   <groups>
                     <group>spring-boot:Strict</group>
                   </groups>
+                  <concepts>
+                    <concept>mapstruct:*</concept>
+                  </concepts>
                   <warnOnSeverity>MINOR</warnOnSeverity>
                   <failOnSeverity>BLOCKER</failOnSeverity> <!-- default: MAJOR -->
                   <rule>
